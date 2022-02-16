@@ -1,0 +1,95 @@
+<div id="custom-content" class="white-popup-block text-center">
+
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    <h2 class="popup-title">HTML coadntent, loaded via ajax</h2>
+    <div class="row pt-4 g-3 border-top">
+        <div class="col-md-6 m-auto">
+
+            <div class="swiper projectSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide d-flex align-items-center  justify-content-center">
+                        <img src="assets/portfolio/portfolio-img1.jpg" class="img-fluid" alt="" srcset="">
+                    </div>
+
+                    <div class="swiper-slide d-flex align-items-center justify-content-center">
+                        <img src="assets/portfolio/portfolio-img1.jpg" class="img-fluid" alt="" srcset="">
+                    </div>
+
+                    <div class="swiper-slide d-flex align-items-center  justify-content-center">
+                        <img src="assets/portfolio/portfolio-img1.jpg" class="img-fluid" alt="" srcset="">
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- <img src="assets/portfolio/portfolio-img1.jpg" class="img-fluid" alt=""> -->
+        </div>
+        <div class="col-md-6 text-left">
+            <h4>Project Information: </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, in est recusandae laudantium
+                expedita culpa. Animi architecto aperiam natus reiciendis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, in est recusandae laudantium
+                expedita culpa. Animi architecto aperiam natus reiciendis.</p>
+            <br>
+            <h4>Project Information: </h4>
+            <ul class="project-point">
+                <li>
+                    <p class="m-0"><span>Clinet :</span> Client Name</p>
+                </li>
+                <li>
+                    <p class="m-0"><span>Industry :</span> Industry Type</p>
+                </li>
+                <li>
+                    <p class="m-0"><span>Technology :</span> HTML5, CSS3, Angular 9, JAVA</p>
+                </li>
+                <li>
+                    <p class="m-0"><span>Date :</span> July 06 , 2021</p>
+                </li>
+                <li>
+                    <p class="m-0"><span>URL :</span> <a class="project-link">www.sitename.com <i
+                                class='pl-2 pr-0 bx bx-link-external'></i></a></p>
+                </li>
+                <li>
+                    <div class="d-flex flex-row">
+                        <span class="pr-3">Share :</span>
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-linkedin-square'></i>
+                        <i class='bx bxl-instagram'></i>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            var swiper = new Swiper(".projectSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+
+        })
+    </script>
+
+
+</div>
